@@ -4,6 +4,7 @@ High level requirements:
 * Have the ingest & store procedure run daily at 9:00AM.
 * Ingest and store rates for all days except weekends.
 * Ensure the system holds at least the last month of rates information.
+* Use Postgres database for storing data.
 
 Technical requrements:
 
