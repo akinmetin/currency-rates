@@ -6,23 +6,11 @@ import psycopg2
 import time
 
 
-# response = requests.get(config("API_ENDPOINT"))
-
-# data = response.json()["rates"]
-
-# for attr in data.keys():
-#     print(attr, " ", data[attr])
-
-
 def create_db_table():
     con = psycopg2.connect(database=config("DB_NAME"), user=config("DB_USER"),
                            password=config("DB_PASSWORD"),
                            host=config("DB_HOST"), port=config("DB_PORT"))
     cur = con.cursor()
-    # cur.execute('''CREATE TABLE rates
-    #   (DATE VARCHAR(10)  PRIMARY KEY     NOT NULL,
-    #   CURRENCY           VARCHAR(3)      NOT NULL,
-    #   VALUE              FLOAT           NOT NULL);''')
     cur.execute('''CREATE TABLE rates
       (DATE              VARCHAR(10)     NOT NULL,
       CURRENCY           VARCHAR(3)      NOT NULL,
@@ -74,6 +62,7 @@ def first_run():
     # commit the waiting insert queries and close the connection.
     con.commit()
     con.close()
+    insert_into_db()
 
 
 def check_db_table_exits():
