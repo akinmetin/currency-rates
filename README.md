@@ -14,12 +14,12 @@ These instructions will get you a copy of the project up and running on a docker
 *   Have the ingest & store procedure run daily at 9:00AM.
 *   Ingest and store rates for all days except weekends.
 *   Ensure the system holds at least the last month of rates information.
-*   Use Postgres database for storing data.
 
 ### Technical requrements
 
 *   Explain every possible functions, calls etc.
 *   Use Python version 3.6+.
+*   Use Postgres database for storing data.
 *   Use docker for containerization.
 
 ### Prerequisites
