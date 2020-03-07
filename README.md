@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on a docker
 
 *   Use the ``fixer.io`` API to ingest currency rates.
 *   Have the ingest & store procedure run daily at 9:00AM.
-*   Ingest and store rates for all days except weekends.
+*   Ingest and store rates for all days.
 *   Ensure the system holds at least the last month of rates information.
 
 ### Technical requrements
