@@ -24,14 +24,24 @@ These instructions will get you a copy of the project up and running on a docker
 
 ### Prerequisites
 
-``Python3``
 ``Docker``
 
 ### Installing
 
-*   Download this repository and extract it to any folder.
-*   Build it using ``docker-compose build`` and run it using ``docker-compose up -d``.
-*   You can also run python script inside the container using: ``docker-compose run app python currency_rates.py``.
++   Download this repository and extract it to any folder.
++   Build it using ``docker-compose build`` and run it using ``docker-compose up -d``.
++   You can also run python script inside the container using: ``docker-compose run app python currency_rates.py``.
++   Create an ``.env`` file for environmental variables.
+
++   Environmental Variables
+
+    *   ``API_ENDPOINT``: Complete GET http request.
+    *   ``API_KEY``: API key for service authentication.
+    *   ``DB_NAME``: Database name for Postgres database server.
+    *   ``DB_USER``: Database username for Postgres database server.
+    *   ``DB_PASSWORD``: Database username for Postgres database server.
+    *   ``DB_HOST``: Hostname or ip of Postgres database server.
+    *   ``DB_PORT``: Port of Postgres database server.
 
 ## Versioning
 
