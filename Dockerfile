@@ -16,7 +16,7 @@ RUN echo "**** install Python ****" && \
     pip3 install --no-cache --upgrade pip setuptools wheel && \
     if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi
 
-ADD ./requirements.txt /src/requirements.txt
+COPY ./requirements.txt /src/requirements.txt
 
 RUN pip3 install --no-cache -r /src/requirements.txt
 
