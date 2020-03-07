@@ -1,5 +1,7 @@
 # Daily Currency Rates
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/e5c7140930924a0286ec56dcd7d3c867)](https://app.codacy.com/manual/metin_akin_bursa/currency-rates?utm_source=github.com&utm_medium=referral&utm_content=akinmetin/currency-rates&utm_campaign=Badge_Grade_Settings)
+
 Python project for getting daily currency rate informations for EUR using Postgres & Docker containerization.
 
 ## Getting Started
