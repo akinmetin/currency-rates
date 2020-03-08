@@ -55,14 +55,3 @@ These instructions will get you a copy of the project up and running on a docker
 ## Licensing
 
 All types usage of this project is required permission from owner of the repository.
-
-## Useful Resources
-
-*   [fixer.io quickstart](https://fixer.io/quickstart)
-*   [fixer.io documentation](https://fixer.io/documentation)
-*   [python api tutorial for beginners](https://www.dataquest.io/blog/python-api-tutorial/)
-*   [python get time](https://tecadmin.net/get-current-date-time-python/)
-*   [python postgresql](https://stackabuse.com/working-with-postgresql-in-python/)
-*   [python postgres check table if exists](https://stackoverflow.com/questions/1874113/checking-if-a-postgresql-table-exists-under-python-and-probably-psycopg2)
-*   [postgres data types (postgres float)](https://www.postgresqltutorial.com/postgresql-data-types/)
-*   [python get number of days in month](https://stackoverflow.com/questions/4938429/how-do-we-determine-the-number-of-days-for-a-given-month-in-python)
