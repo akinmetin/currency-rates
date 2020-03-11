@@ -4,6 +4,8 @@ FROM alpine:3.11
 # See: https://github.com/Docker-Hub-frolvlad/docker-alpine-python3/pull/13
 ENV PYTHONUNBUFFERED=1
 
+WORKDIR /src
+
 RUN echo "**** install Python ****" && \
     apk add --no-cache python3 && \
     # adding psycopg2 depencies
@@ -20,4 +22,4 @@ COPY ./requirements.txt /src/requirements.txt
 
 RUN pip3 install --no-cache -r /src/requirements.txt
 
-WORKDIR /src
+CMD [ "python", "./currency_rates.py" ]

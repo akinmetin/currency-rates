@@ -8,6 +8,10 @@ Python project for getting daily currency rate informations for EUR using Postgr
 
 These instructions will get you a copy of the project up and running on a docker container for development and testing purposes.
 
+### Prerequisites
+
+``Docker``
+
 ### High level requirements
 
 *   Use the ``fixer.io`` API to ingest currency rates.
@@ -22,28 +26,24 @@ These instructions will get you a copy of the project up and running on a docker
 *   Use Postgres database for storing data.
 *   Use docker for containerization.
 
-### Prerequisites
-
-``Docker``
-
 ### Installing
 
 *   Download this repository and extract it to any folder.
 
 *   Build it using ``docker-compose build`` and run it using ``docker-compose up -d``.
 
-*   You can also run python script inside the container using: ``docker-compose run app python currency_rates.py``.
+*   You can run the python script inside of the container using: ``docker-compose run app python currency_rates.py``.
 
 *   Create an ``.env`` file for environmental variables.
 
 *   Environmental Variables
     *   ``API_ENDPOINT``: Complete GET http request.
     *   ``API_KEY``: API key for service authentication.
-    *   ``DB_NAME``: Database name for Postgres database server.
-    *   ``DB_USER``: Database username for Postgres database server.
-    *   ``DB_PASSWORD``: Database username for Postgres database server.
-    *   ``DB_HOST``: Hostname or ip of Postgres database server.
-    *   ``DB_PORT``: Port of Postgres database server.
+    *   ``DB_NAME``: Database name for Postgres server.
+    *   ``DB_USER``: Database username for Postgres server.
+    *   ``DB_PASSWORD``: Database password for Postgres server.
+    *   ``DB_HOST``: Hostname or IP of Postgres server.
+    *   ``DB_PORT``: Port of the Postgres server.
 
 ## Versioning
 
