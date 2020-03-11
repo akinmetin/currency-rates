@@ -32,8 +32,6 @@ These instructions will get you a copy of the project up and running on a docker
 
 *   Build it using ``docker-compose build`` and run it using ``docker-compose up -d``.
 
-*   You can run the python script inside of the container using: ``docker-compose run app python currency_rates.py``.
-
 *   Create an ``.env`` file for environmental variables.
 
 *   Environmental Variables
